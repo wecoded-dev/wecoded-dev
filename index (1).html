@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub OAuth Login | Hanzla Baig</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Background with Glassmorphism Effect */
+        body { 
+            background: linear-gradient(135deg, #1e3c72, #2a5298); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        
+        /* Glassmorphism Container */
+        .container {
+            max-width: 450px; 
+            background: rgba(255, 255, 255, 0.1); 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 26px; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+        }
+
+        /* GitHub Button */
+        .btn-github {
+            background: #24292e; 
+            color: white; 
+            font-size: 18px; 
+            font-weight: bold; 
+            padding: 12px; 
+            border-radius: 6px; 
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-github img {
+            width: 26px; 
+            margin-right: 10px;
+        }
+
+        .btn-github:hover {
+            background: #444d56; 
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background: #121212;
+            color: #f5f5f5;
+        }
+
+        .footer {
+            margin-top: 15px; 
+            font-size: 14px; 
+            color: #ccc;
+        }
+
+        /* Animated Glowing Border */
+        .container::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 12px;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            z-index: -1;
+        }
+
+        /* User Profile Display */
+        .profile {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid white;
+        }
+
+        .profile h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .profile a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign in with GitHub</h1>
+        <button id="github-login" class="btn btn-github">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+            Login with GitHub
+        </button>
+        <p class="footer">Powered by <strong>HanzlaBaig.github.io</strong></p>
+        
+        <!-- Profile Display Section -->
+        <div class="profile" id="user-profile">
+            <img id="avatar" src="" alt="User Avatar">
+            <h3 id="username"></h3>
+            <a id="profile-link" href="#" target="_blank">View GitHub Profile</a>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#github-login").click(function() {
+                let clientId = "Ov23lifoyNfPVkYuhhiy"; // Your GitHub Client ID
+                let redirectUri = "https://hanzlabaig.github.io"; // Your Redirect URI
+                let scope = "read:user";
+
+                let githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+                window.location.href = githubAuthUrl;
+            });
+
+            // Extract the access code from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get("code");
+
+            if (code) {
+                fetch(`https://api.github.com/user`, {
+                    headers: {
+                        Authorization: `token ${code}`
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    $("#avatar").attr("src", data.avatar_url);
+                    $("#username").text(data.login);
+                    $("#profile-link").attr("href", data.html_url);
+                    $("#user-profile").fadeIn();
+                })
+                .catch(error => console.error("Error:", error));
+            }
+        });
+    </script>
+
+</body>
+</html>
