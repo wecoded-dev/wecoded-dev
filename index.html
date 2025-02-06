@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub OAuth Login | Hanzla Baig</title>
+    <title>GitHub OAuth Login | DevStudio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        /* Background with Glassmorphism Effect */
         body { 
             background: linear-gradient(135deg, #1e3c72, #2a5298); 
             display: flex; 
@@ -18,10 +17,9 @@
             font-family: 'Poppins', sans-serif;
             color: white;
         }
-        
-        /* Glassmorphism Container */
+
         .container {
-            max-width: 450px; 
+            max-width: 600px; 
             background: rgba(255, 255, 255, 0.1); 
             padding: 30px; 
             border-radius: 12px; 
@@ -31,13 +29,8 @@
             border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        h1 {
-            font-size: 26px; 
-            font-weight: bold; 
-            margin-bottom: 20px; 
-        }
-
-        /* GitHub Button */
+        h1 { font-size: 26px; font-weight: bold; margin-bottom: 20px; }
+        
         .btn-github {
             background: #24292e; 
             color: white; 
@@ -46,16 +39,13 @@
             padding: 12px; 
             border-radius: 6px; 
             width: 100%;
+            transition: 0.3s;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: 0.3s ease-in-out;
         }
 
-        .btn-github img {
-            width: 26px; 
-            margin-right: 10px;
-        }
+        .btn-github img { width: 26px; margin-right: 10px; }
 
         .btn-github:hover {
             background: #444d56; 
@@ -63,57 +53,14 @@
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
         }
 
-        /* Dark Mode */
-        .dark-mode {
-            background: #121212;
-            color: #f5f5f5;
-        }
+        .profile { display: none; margin-top: 20px; text-align: left; }
+        .profile img { width: 120px; border-radius: 50%; margin-bottom: 10px; border: 3px solid white; }
+        .profile h3 { margin: 10px 0; font-size: 24px; font-weight: bold; }
+        .profile p { margin: 5px 0; font-size: 16px; }
+        .repo-container { margin-top: 20px; text-align: left; max-height: 300px; overflow-y: auto; }
+        .repo { background: rgba(255, 255, 255, 0.2); padding: 10px; margin: 5px 0; border-radius: 8px; }
+        .repo a { color: white; text-decoration: none; font-weight: bold; }
 
-        .footer {
-            margin-top: 15px; 
-            font-size: 14px; 
-            color: #ccc;
-        }
-
-        /* Animated Glowing Border */
-        .container::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border-radius: 12px;
-            background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            z-index: -1;
-        }
-
-        /* User Profile Display */
-        .profile {
-            display: none;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .profile img {
-            width: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            border: 3px solid white;
-        }
-
-        .profile h3 {
-            margin: 0;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .profile a {
-            color: #f5f5f5;
-            text-decoration: none;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
@@ -124,24 +71,26 @@
             <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
             Login with GitHub
         </button>
-        <p class="footer">Powered by <strong>HanzlaBaig.github.io</strong></p>
         
-        <!-- Profile Display Section -->
         <div class="profile" id="user-profile">
             <img id="avatar" src="" alt="User Avatar">
             <h3 id="username"></h3>
-            <a id="profile-link" href="#" target="_blank">View GitHub Profile</a>
+            <p id="bio"></p>
+            <p><strong>Location:</strong> <span id="location"></span></p>
+            <p><strong>Followers:</strong> <span id="followers"></span></p>
+            <p><strong>Following:</strong> <span id="following"></span></p>
+            <h4>Repositories</h4>
+            <div class="repo-container" id="repo-list"></div>
         </div>
     </div>
 
     <script>
         $(document).ready(function() {
-            $("#github-login").click(function() {
-                let clientId = "Ov23lifoyNfPVkYuhhiy"; // Your GitHub Client ID
-                let redirectUri = "https://devstudio-std.github.io/devstudio-std"; // Your Redirect URI
-                let scope = "read:user";
+            const clientId = "Ov23lifoyNfPVkYuhhiy";
+            const redirectUri = "https://devstudio-std.github.io/devstudio-std";
 
-                let githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+            $("#github-login").click(function() {
+                let githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=repo,user`;
                 window.location.href = githubAuthUrl;
             });
 
@@ -150,19 +99,63 @@
             const code = urlParams.get("code");
 
             if (code) {
-                fetch(`https://api.github.com/user`, {
-                    headers: {
-                        Authorization: `token ${code}`
+                fetchAccessToken(code);
+            }
+
+            function fetchAccessToken(code) {
+                $.ajax({
+                    url: `https://devstudio-std.github.io/devstudio-std/oauth-proxy?code=${code}`,
+                    method: "GET",
+                    success: function(response) {
+                        let token = response.access_token;
+                        fetchGitHubUser(token);
+                        fetchGitHubRepos(token);
+                    },
+                    error: function() {
+                        alert("Error getting access token.");
                     }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    $("#avatar").attr("src", data.avatar_url);
-                    $("#username").text(data.login);
-                    $("#profile-link").attr("href", data.html_url);
-                    $("#user-profile").fadeIn();
-                })
-                .catch(error => console.error("Error:", error));
+                });
+            }
+
+            function fetchGitHubUser(token) {
+                $.ajax({
+                    url: "https://api.github.com/user",
+                    headers: { Authorization: `token ${token}` },
+                    success: function(user) {
+                        $("#avatar").attr("src", user.avatar_url);
+                        $("#username").text(user.login);
+                        $("#bio").text(user.bio || "No bio available.");
+                        $("#location").text(user.location || "Unknown");
+                        $("#followers").text(user.followers);
+                        $("#following").text(user.following);
+                        $("#user-profile").fadeIn();
+                    },
+                    error: function() {
+                        alert("Error fetching GitHub user profile.");
+                    }
+                });
+            }
+
+            function fetchGitHubRepos(token) {
+                $.ajax({
+                    url: "https://api.github.com/user/repos",
+                    headers: { Authorization: `token ${token}` },
+                    success: function(repos) {
+                        $("#repo-list").empty();
+                        repos.forEach(repo => {
+                            $("#repo-list").append(`
+                                <div class="repo">
+                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                                    <p>${repo.description || "No description"}</p>
+                                    <p>⭐ ${repo.stargazers_count} | 🔥 ${repo.language || "N/A"}</p>
+                                </div>
+                            `);
+                        });
+                    },
+                    error: function() {
+                        alert("Error fetching repositories.");
+                    }
+                });
             }
         });
     </script>
