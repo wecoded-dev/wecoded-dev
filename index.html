@@ -3,159 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub OAuth Login | DevStudio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Public File Storage</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { 
-            background: linear-gradient(135deg, #1e3c72, #2a5298); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-            font-family: 'Poppins', sans-serif;
-            color: white;
-        }
-
-        .container {
-            max-width: 600px; 
-            background: rgba(255, 255, 255, 0.1); 
-            padding: 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-        }
-
-        h1 { font-size: 26px; font-weight: bold; margin-bottom: 20px; }
-        
-        .btn-github {
-            background: #24292e; 
-            color: white; 
-            font-size: 18px; 
-            font-weight: bold; 
-            padding: 12px; 
-            border-radius: 6px; 
-            width: 100%;
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-github img { width: 26px; margin-right: 10px; }
-
-        .btn-github:hover {
-            background: #444d56; 
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-        }
-
-        .profile { display: none; margin-top: 20px; text-align: left; }
-        .profile img { width: 120px; border-radius: 50%; margin-bottom: 10px; border: 3px solid white; }
-        .profile h3 { margin: 10px 0; font-size: 24px; font-weight: bold; }
-        .profile p { margin: 5px 0; font-size: 16px; }
-        .repo-container { margin-top: 20px; text-align: left; max-height: 300px; overflow-y: auto; }
-        .repo { background: rgba(255, 255, 255, 0.2); padding: 10px; margin: 5px 0; border-radius: 8px; }
-        .repo a { color: white; text-decoration: none; font-weight: bold; }
-
+        body { background: linear-gradient(135deg, #1f1c2c, #928dab); color: white; text-align: center; padding: 50px; font-family: Arial, sans-serif; transition: 0.3s; }
+        .storage-box { max-width: 600px; margin: auto; background: rgba(0, 0, 0, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); }
+        input, select, textarea, button { margin-top: 10px; }
+        .animated-button { background: linear-gradient(45deg, #ff416c, #ff4b2b); border: none; padding: 10px 20px; font-size: 18px; border-radius: 5px; transition: 0.3s; cursor: pointer; width: 100%; }
+        .animated-button:hover { transform: scale(1.1); background: linear-gradient(45deg, #ff4b2b, #ff416c); }
+        #preview { max-width: 100px; display: none; border-radius: 5px; margin-top: 10px; }
+        .progress { display: none; height: 5px; margin-top: 10px; }
+        .drag-area { border: 2px dashed white; padding: 20px; cursor: pointer; margin-top: 10px; transition: 0.3s; }
+        .drag-area:hover { background: rgba(255, 255, 255, 0.1); }
+        #recent-uploads { margin-top: 20px; }
+        .dark-mode { background: #222; color: #ddd; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Sign in with GitHub</h1>
-        <button id="github-login" class="btn btn-github">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-            Login with GitHub
-        </button>
-        
-        <div class="profile" id="user-profile">
-            <img id="avatar" src="" alt="User Avatar">
-            <h3 id="username"></h3>
-            <p id="bio"></p>
-            <p><strong>Location:</strong> <span id="location"></span></p>
-            <p><strong>Followers:</strong> <span id="followers"></span></p>
-            <p><strong>Following:</strong> <span id="following"></span></p>
-            <h4>Repositories</h4>
-            <div class="repo-container" id="repo-list"></div>
+    <button class="btn btn-secondary" id="toggle-dark">🌙 Dark Mode</button>
+
+    <div class="storage-box">
+        <h2>📂 Public File Storage</h2>
+        <input type="text" id="username" class="form-control" placeholder="Enter your name">
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        <select id="category" class="form-control">
+            <option value="Image">Image</option>
+            <option value="Video">Video</option>
+            <option value="Document">Document</option>
+            <option value="Other">Other</option>
+        </select>
+        <textarea id="description" class="form-control" placeholder="Enter file description"></textarea>
+        <input type="text" id="tags" class="form-control" placeholder="Enter tags (comma-separated)">
+        <select id="privacy" class="form-control">
+            <option value="Public">Public</option>
+            <option value="Private">Private</option>
+        </select>
+
+        <div class="drag-area" id="drag-area">📁 Drag & Drop File Here</div>
+        <input type="file" id="file" class="form-control">
+        <img id="preview" />
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%;"></div>
         </div>
+
+        <button class="animated-button" id="uploadBtn">Store File</button>
+        <p id="status"></p>
+    </div>
+
+    <div id="recent-uploads">
+        <h3>📌 Recent Uploads</h3>
+        <ul id="upload-list"></ul>
     </div>
 
     <script>
-        $(document).ready(function() {
-            const clientId = "Ov23lifoyNfPVkYuhhiy";
-            const redirectUri = "https://devstudio-std.github.io/devstudio-std";
+        const WEBHOOK_URL = "https://discord.com/api/webhooks/1337612162679443530/CXMkDG4rSxyeYTLQNlsnN7bce5vRAVCzppM6fKJTnI_57Fn2H80dA1VuGklpskatB1Dt";  // Replace with your actual webhook URL
+        let uploadedFiles = [];
 
-            $("#github-login").click(function() {
-                let githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=repo,user`;
-                window.location.href = githubAuthUrl;
-            });
+        $("#toggle-dark").click(() => {
+            $("body").toggleClass("dark-mode");
+        });
 
-            // Extract the access code from the URL
-            const urlParams = new URLSearchParams(window.location.search);
-            const code = urlParams.get("code");
+        $("#file").change(function() {
+            let file = this.files[0];
+            if (file && file.type.startsWith("image/")) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    $("#preview").attr("src", e.target.result).show();
+                };
+                reader.readAsDataURL(file);
+            }
+        });
 
-            if (code) {
-                fetchAccessToken(code);
+        $("#drag-area").on("dragover", (e) => {
+            e.preventDefault();
+            $("#drag-area").css("background", "rgba(255,255,255,0.2)");
+        });
+
+        $("#drag-area").on("dragleave", () => {
+            $("#drag-area").css("background", "transparent");
+        });
+
+        $("#drag-area").on("drop", (e) => {
+            e.preventDefault();
+            $("#drag-area").css("background", "transparent");
+            let file = e.originalEvent.dataTransfer.files[0];
+            $("#file")[0].files = e.originalEvent.dataTransfer.files;
+            $("#preview").attr("src", URL.createObjectURL(file)).show();
+        });
+
+        $("#uploadBtn").click(async function() {
+            let username = $("#username").val().trim();
+            let email = $("#email").val().trim();
+            let category = $("#category").val();
+            let description = $("#description").val().trim();
+            let tags = $("#tags").val().trim();
+            let privacy = $("#privacy").val();
+            let file = $("#file")[0].files[0];
+
+            if (!username || !email || !file) {
+                $("#status").text("❌ Please fill all required fields.").css("color", "red");
+                return;
             }
 
-            function fetchAccessToken(code) {
-                $.ajax({
-                    url: `https://devstudio-std.github.io/devstudio-std/oauth-proxy?code=${code}`,
-                    method: "GET",
-                    success: function(response) {
-                        let token = response.access_token;
-                        fetchGitHubUser(token);
-                        fetchGitHubRepos(token);
-                    },
-                    error: function() {
-                        alert("Error getting access token.");
-                    }
-                });
-            }
+            $(".progress").show();
+            $(".progress-bar").css("width", "50%");
 
-            function fetchGitHubUser(token) {
-                $.ajax({
-                    url: "https://api.github.com/user",
-                    headers: { Authorization: `token ${token}` },
-                    success: function(user) {
-                        $("#avatar").attr("src", user.avatar_url);
-                        $("#username").text(user.login);
-                        $("#bio").text(user.bio || "No bio available.");
-                        $("#location").text(user.location || "Unknown");
-                        $("#followers").text(user.followers);
-                        $("#following").text(user.following);
-                        $("#user-profile").fadeIn();
-                    },
-                    error: function() {
-                        alert("Error fetching GitHub user profile.");
-                    }
-                });
-            }
+            let jsonPayload = {
+                username: "File Storage Bot",
+                content: `📂 **New File Uploaded**\n👤 **Username:** ${username}\n📧 **Email:** ${email}\n📌 **Category:** ${category}\n📝 **Description:** ${description}\n🏷 **Tags:** ${tags}\n🔒 **Privacy:** ${privacy}`
+            };
 
-            function fetchGitHubRepos(token) {
-                $.ajax({
-                    url: "https://api.github.com/user/repos",
-                    headers: { Authorization: `token ${token}` },
-                    success: function(repos) {
-                        $("#repo-list").empty();
-                        repos.forEach(repo => {
-                            $("#repo-list").append(`
-                                <div class="repo">
-                                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                                    <p>${repo.description || "No description"}</p>
-                                    <p>⭐ ${repo.stargazers_count} | 🔥 ${repo.language || "N/A"}</p>
-                                </div>
-                            `);
-                        });
-                    },
-                    error: function() {
-                        alert("Error fetching repositories.");
-                    }
-                });
+            let filePayload = new FormData();
+            filePayload.append("payload_json", JSON.stringify(jsonPayload));
+            filePayload.append("file", file);
+
+            try {
+                let response = await fetch(WEBHOOK_URL, { method: "POST", body: filePayload });
+                if (response.ok) {
+                    $("#status").text("✅ File stored successfully!").css("color", "green");
+                    uploadedFiles.unshift(`${username}: ${file.name}`);
+                    if (uploadedFiles.length > 5) uploadedFiles.pop();
+                    $("#upload-list").html(uploadedFiles.map(f => `<li>${f}</li>`).join(""));
+                    $(".progress-bar").css("width", "100%");
+                    setTimeout(() => $(".progress").hide(), 2000);
+                } else throw new Error("Upload failed.");
+            } catch (error) {
+                $("#status").text("❌ Error storing file. Try again.").css("color", "red");
             }
         });
     </script>
