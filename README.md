@@ -11,5 +11,4 @@ _**Welcome to The WeCoded**_
 5. Bootstrap
 6. JQuery
 
-
- ![Waves](waves.svg)
+<img src="waves.svg" width="950">
