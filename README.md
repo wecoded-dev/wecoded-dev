@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/visitors-0-green?style=for-the-badge&logo=eye&logoColor=white&labelColor=black" />
+</p>
+
+
+
 # 🌟 Welcome to WeCoded! 🚀
 
 We are **WeCoded**, a vibrant team of passionate developers on a mission to turn ideas into reality through the power of code. 👩‍💻👨‍💻 Together, we are building innovative, scalable, and impactful software solutions. 🎉✨ 
