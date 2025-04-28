@@ -19,6 +19,8 @@
 </p>
 
 
+
+
 # 🌟 Welcome to WeCoded! 🚀
 
 We are **WeCoded**, a vibrant team of passionate developers on a mission to turn ideas into reality through the power of code. 👩‍💻👨‍💻 Together, we are building innovative, scalable, and impactful software solutions. 🎉✨ 
