@@ -11,6 +11,14 @@
   <img src="https://streak-stats.demolab.com?user=wecoded-dev&theme=default&hide_border=true" alt="GitHub Streak" />
 </p>
 
+
+## My GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=wecoded-dev&theme=flat&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+</p>
+
+
 # 🌟 Welcome to WeCoded! 🚀
 
 We are **WeCoded**, a vibrant team of passionate developers on a mission to turn ideas into reality through the power of code. 👩‍💻👨‍💻 Together, we are building innovative, scalable, and impactful software solutions. 🎉✨ 
