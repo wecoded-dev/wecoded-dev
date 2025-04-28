@@ -7,6 +7,9 @@
 </p>
 
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=wecoded-dev&theme=default&hide_border=true" alt="GitHub Streak" />
+</p>
 
 # 🌟 Welcome to WeCoded! 🚀
 
