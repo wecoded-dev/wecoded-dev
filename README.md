@@ -1,5 +1,9 @@
+<h1 align="center">
+  Visitor count
+</h1>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/visitors-0-green?style=for-the-badge&logo=eye&logoColor=white&labelColor=black" />
+  <img src="https://profile-counter.glitch.me/YOUR_USERNAME/count.svg" />
 </p>
 
 
