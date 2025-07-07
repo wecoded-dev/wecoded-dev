@@ -31,32 +31,38 @@ I’m part of the **AquaScript** team — a group of developers building **free 
 
 <div align="center">
 
+<!-- Team Members Grid -->
+  
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/wecoded-dev">
-        <img src="https://github.com/wecoded-dev.png" width="110" height="110" style="border-radius: 50%;" alt="Hanzla Baig"/><br/>
+      <a href="https://github.com/wecoded-dev" target="_blank">
+        <img src="https://github.com/wecoded-dev.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Hanzla Baig" />
+        <br/>
         <b>Hanzla Baig</b><br/>
         <sub><i>Front-End Developer</i></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/VIDAKHOSHPEY22">
-        <img src="https://github.com/VIDAKHOSHPEY22.png" width="110" height="110" style="border-radius: 50%;" alt="Vida"/><br/>
+      <a href="https://github.com/VIDAKHOSHPEY22" target="_blank">
+        <img src="https://github.com/VIDAKHOSHPEY22.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Vida" />
+        <br/>
         <b>Vida</b><br/>
         <sub><i>Full Stack Developer</i></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/YALDAKHOSHPEY">
-        <img src="https://github.com/YALDAKHOSHPEY.png" width="110" height="110" style="border-radius: 50%;" alt="Yalda"/><br/>
+      <a href="https://github.com/YALDAKHOSHPEY" target="_blank">
+        <img src="https://github.com/YALDAKHOSHPEY.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Yalda" />
+        <br/>
         <b>Yalda</b><br/>
         <sub><i>Front-End Developer</i></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/KelvinCode1234">
-        <img src="https://github.com/KelvinCode1234.png" width="110" height="110" style="border-radius: 50%;" alt="Kelvin"/><br/>
+      <a href="https://github.com/KelvinCode1234" target="_blank">
+        <img src="https://github.com/KelvinCode1234.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Kelvin" />
+        <br/>
         <b>Kelvin</b><br/>
         <sub><i>Front-End Engineer</i></sub>
       </a>
