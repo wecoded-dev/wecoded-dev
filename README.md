@@ -30,11 +30,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/wecoded-dev"><img src="https://komarev.com/ghpvc/?username=wecoded-dev&color=00BFFF&style=flat-square&label=Profile+Views" alt="Profile Views"/></a>
-  &nbsp;
+  
+  
   <a href="mailto:support@aquascript.xyz"><img src="https://img.shields.io/badge/Contact%20Me-00BFFF?style=flat-square&logo=gmail&logoColor=white" alt="Contact"/></a>
   &nbsp;
   <a href="https://aquascript.xyz"><img src="https://img.shields.io/badge/Check%20Out%20AquaScript-00BFFF?style=flat-square&logo=cloudflare&logoColor=white" alt="AquaScript API"/></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Aquascript-Team-00BFFF?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Building%20Free%20APIs%20for%20Developers-%F0%9F%92%A7-00bfff?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Front--End%20Magic-%F0%9F%AA%99-1a2980?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/We%20%F0%9F%92%96%20Open%20Source-E4405F?style=for-the-badge" />
 </p>
 
 ---
