@@ -27,44 +27,38 @@ I’m part of the **AquaScript** team — a group of developers building **free 
 
 ---
 
-### 👥 Meet the AquaScript Team
+### 💻 Meet the AquaScript Team
 
 <div align="center">
 
-<!-- Team Members Grid -->
-  
 <table>
   <tr>
-    <td align="center">
+    <td align="center" width="150">
       <a href="https://github.com/wecoded-dev" target="_blank">
-        <img src="https://github.com/wecoded-dev.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Hanzla Baig" />
-        <br/>
-        <b>Hanzla Baig</b><br/>
-        <sub><i>Front-End Developer</i></sub>
+        <img src="https://github.com/wecoded-dev.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Hanzla Baig" />
+        <div><strong>Hanzla Baig</strong></div>
+        <div>🎨 Front-End Developer</div>
       </a>
     </td>
-    <td align="center">
+    <td align="center" width="150">
       <a href="https://github.com/VIDAKHOSHPEY22" target="_blank">
-        <img src="https://github.com/VIDAKHOSHPEY22.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Vida" />
-        <br/>
-        <b>Vida</b><br/>
-        <sub><i>Full Stack Developer</i></sub>
+        <img src="https://github.com/VIDAKHOSHPEY22.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Vida" />
+        <div><strong>Vida</strong></div>
+        <div>🧠 Full Stack Developer</div>
       </a>
     </td>
-    <td align="center">
+    <td align="center" width="150">
       <a href="https://github.com/YALDAKHOSHPEY" target="_blank">
-        <img src="https://github.com/YALDAKHOSHPEY.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Yalda" />
-        <br/>
-        <b>Yalda</b><br/>
-        <sub><i>Front-End Developer</i></sub>
+        <img src="https://github.com/YALDAKHOSHPEY.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Yalda" />
+        <div><strong>Yalda</strong></div>
+        <div>🌈 Front-End Developer</div>
       </a>
     </td>
-    <td align="center">
+    <td align="center" width="150">
       <a href="https://github.com/KelvinCode1234" target="_blank">
-        <img src="https://github.com/KelvinCode1234.png" width="100" style="border-radius: 50%; box-shadow: 0px 0px 10px rgba(0,191,255,0.6);" alt="Kelvin" />
-        <br/>
-        <b>Kelvin</b><br/>
-        <sub><i>Front-End Engineer</i></sub>
+        <img src="https://github.com/KelvinCode1234.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Kelvin" />
+        <div><strong>Kelvin</strong></div>
+        <div>⚡ Front-End Engineer</div>
       </a>
     </td>
   </tr>
@@ -73,14 +67,20 @@ I’m part of the **AquaScript** team — a group of developers building **free 
 </div>
 
 ---
-
 ### 🚀 Featured Project: [AquaScript](https://github.com/wecoded-dev/Aquascript)
 
-> Build with our free and blazing-fast REST APIs. Make your ideas come alive with **AquaScript**.
+> 💡 **AquaScript** is a lightning-fast collection of free REST APIs.  
+> ⚙️ Use it to supercharge your next idea, tool, or web app with ease.
+
+<div align="center">
 
 [![AquaScript Repo](https://github-readme-stats.vercel.app/api/pin/?username=wecoded-dev&repo=Aquascript&theme=tokyonight)](https://github.com/wecoded-dev/Aquascript)
 
+<br/>
+
 [![Explore AquaScript](https://img.shields.io/badge/Explore%20AquaScript%20APIs-00bfff?style=for-the-badge&logo=cloudflare&logoColor=white)](https://aquascript.xyz)
+
+</div>
 
 ---
 
@@ -110,7 +110,11 @@ I’m part of the **AquaScript** team — a group of developers building **free 
 
 ### 📬 Contact
 
-[![Email](https://img.shields.io/badge/📩%20support@aquascript.xyz-00bfff?style=for-the-badge)](mailto:support@aquascript.xyz)
+<div align="center">
+
+[![Email](https://img.shields.io/badge/📩%20support@aquascript.xyz-00bfff?style=for-the-badge&logo=gmail&logoColor=white)](mailto:support@aquascript.xyz)
+
+</div>
 
 ---
 
