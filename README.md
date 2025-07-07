@@ -1,3 +1,18 @@
+<!-- ✨ Ultra-Beautiful Animated Profile README for Hanzla Baig (wecoded-dev) ✨ -->
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00bfff,100:1a2980&height=180&section=header&text=Hanzla%20Baig%20%7C%20wecoded-dev&fontSize=45&fontColor=fafafa&fontAlignY=40&desc=Front-End%20Developer%20%7C%20API%20Enthusiast&descSize=22&descAlignY=70&animation=twinkling" alt="Header Capsule">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Pacifico&size=36&duration=2500&pause=1200&color=00bfff&center=true&vCenter=true&width=900&lines=Hi+there!+I'm+Hanzla+Baig+%F0%9F%91%8B;Crafting+Stunning+Front-End+Experiences;Team+Aquascript+%F0%9F%92%A7;Let%27s+Build+Something+Awesome+Together!+%F0%9F%92%BB" alt="Typing SVG">
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="220" alt="Dev Animation" />
+</p>
+
+
 <!-- README for Hanzla Baig (wecoded-dev) -->
 
 <p align="center">
