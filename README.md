@@ -112,6 +112,13 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=wecoded-dev&theme=react-dark&area=true&hide_border=true" alt="Activity Graph"/>
 </p>
 
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wecoded-dev&theme=tokyonight" alt="Profile Details Card" />
+  <br/><br/>
+  <img src="https://github-readme-stats.vercel.app/api?username=wecoded-dev&show_icons=true&theme=react&border_radius=20&hide_border=true" alt="Stats" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wecoded-dev&layout=compact&theme=react&hide_border=true&border_radius=20&langs_count=6" alt="Top Langs" height="160"/>
+</div>
+
 ---
 
 <p align="center">
@@ -125,7 +132,6 @@
 </p>
 
 ---
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=wave&color=00bfff&height=120&section=footer&text=Thank%20You%20for%20visiting!%20%E2%9D%A4%EF%B8%8F&fontSize=35&fontColor=ffffff" alt="Footer Capsule"/>
 </p>
