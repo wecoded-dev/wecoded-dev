@@ -25,6 +25,10 @@ I’m part of the **AquaScript** team — a group of developers building **free 
 
 🌊 **AquaScript** is a hub of creative, free, and open-source APIs designed for developers, by developers.
 
+<p align="center">
+  <img src="https://github-widgetbox.vercel.app/api/profile?username=wecoded-dev&data=followers,repositories,stars,commits" alt="wecoded-dev GitHub Widget" />
+</p>
+
 ---
 
 ### 💻 Meet the AquaScript Team
