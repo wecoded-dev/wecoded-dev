@@ -59,6 +59,15 @@ My mission: _Make the web more awesome, one pixel at a time!_
 
 ### [Aquascript](https://github.com/wecoded-dev/Aquascript)
 
+
+<div align="center" style="background: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%); padding: 2rem 1rem; border-radius: 16px; box-shadow: 0 4px 24px rgba(72,198,239,0.15);">
+
+  <a href="https://github.com/wecoded-dev/Aquascript" target="_blank" rel="noopener noreferrer">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=wecoded-dev&repo=Aquascript&theme=react"
+      alt="Aquascript repository"
+      style="border-radius:12px;max-width:400px;box-shadow:0 2px 12px rgba(111,134,214,0.25);" />
+  </a>
+
 Aquascript is a powerful platform providing **free, blazing fast JSON APIs** for developers.  
 Check out our website 👉 [aquascript.xyz](https://aquascript.xyz)  
 _The fastest way for developers to access public data and build cool things!_
