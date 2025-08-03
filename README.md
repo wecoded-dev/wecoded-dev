@@ -1,129 +1,157 @@
+<!--
+🌈✨ Ultra-Beautiful Animated Profile of Hanzla Baig (wecoded-dev) ✨🌈
+-->
+
 <div align="center">
 
-<!-- 🔹 HEADER -->
-  
-![Hanzla Baig Header](https://capsule-render.vercel.app/api?type=waving&color=00bfff&height=200&section=header&text=Hanzla%20Baig&fontSize=42&fontColor=ffffff&desc=Front-End%20Developer%20×%20AquaScript%20Team&descSize=20&animation=fadeInDown)
 
-<br/>
+# 👋 Hi, I'm <span style="color:#36D1DC;">Hanzla Baig</span>!
+## 🦄 Front-End Developer • UI Artist • API Builder
 
-<!-- 🔹 GIF + Typing Animation -->
+<br>
 
-<img src="https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif" width="220" height="150" alt="Coding Developer GIF" />
 
-<br/>
+</div>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=600&lines=Passionate+Developer;Loves+Clean+Code;Building+Awesome+Websites;AquaScript+Team+Member" alt="Typing Animation" />
+
+
+<div align="center">
+
+<img src="https://media.giphy.com/media/3ohhwytHcusSCXXOUg/giphy.gif" width="260" alt="UI Animation" />
+
 
 </div>
 
 ---
 
-### 🌟 About Me
+## 🚀 About Me
 
-I'm **Hanzla Baig**, a passionate **Front-End Developer** who loves building beautiful web experiences.  
-I’m part of the **AquaScript** team — a group of developers building **free APIs and tools** to empower coders across the globe.
+Welcome to my GitHub!  
+I am **Hanzla Baig** (aka _wecoded-dev_), a passionate front-end developer who loves building beautiful, interactive, and high-performance web experiences.
 
-🌊 **AquaScript** is a hub of creative, free, and open-source APIs designed for developers, by developers.
+**I specialize in:**
+- HTML
+- CSS
+- JavaScript
+- Java
+- Bootstrap
+- jQuery
 
-<p align="center">
-  <img src="https://github-widgetbox.vercel.app/api/profile?username=wecoded-dev&data=followers,repositories,stars,commits" alt="wecoded-dev GitHub Widget" />
-</p>
+My mission: _Make the web more awesome, one pixel at a time!_
 
 ---
 
-### 💻 Meet the AquaScript Team
+## ✨ My Philosophy
+
+> "Code is not just what powers the web, it's what brings ideas to life."
+>
+> "Every pixel deserves a purpose and every animation a smile!"
+
+---
 
 <div align="center">
-
-<table>
-  <tr>
-    <td align="center" width="150">
-      <a href="https://github.com/wecoded-dev" target="_blank">
-        <img src="https://github.com/wecoded-dev.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Hanzla Baig" />
-        <div><strong>Hanzla Baig</strong></div>
-        <div>🎨 Front-End Developer</div>
-      </a>
-    </td>
-    <td align="center" width="150">
-      <a href="https://github.com/VIDAKHOSHPEY22" target="_blank">
-        <img src="https://github.com/VIDAKHOSHPEY22.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Vida" />
-        <div><strong>Vida</strong></div>
-        <div>🧠 Full Stack Developer</div>
-      </a>
-    </td>
-    <td align="center" width="150">
-      <a href="https://github.com/YALDAKHOSHPEY" target="_blank">
-        <img src="https://github.com/YALDAKHOSHPEY.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Yalda" />
-        <div><strong>Yalda</strong></div>
-        <div>🌈 Front-End Developer</div>
-      </a>
-    </td>
-    <td align="center" width="150">
-      <a href="https://github.com/KelvinCode1234" target="_blank">
-        <img src="https://github.com/KelvinCode1234.png" width="110" style="border-radius: 50%; box-shadow: 0 4px 12px rgba(0,191,255,0.4); border: 2px solid #00bfff;" alt="Kelvin" />
-        <div><strong>Kelvin</strong></div>
-        <div>⚡ Front-End Engineer</div>
-      </a>
-    </td>
-  </tr>
-</table>
-
+  <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="360" alt="Creative Animation" />
 </div>
 
 ---
-### 🚀 Featured Project: [AquaScript](https://github.com/wecoded-dev/Aquascript)
 
-> 💡 **AquaScript** is a lightning-fast collection of free REST APIs.  
-> ⚙️ Use it to supercharge your next idea, tool, or web app with ease.
+## 🌟 Featured Project
+
+### [Aquascript](https://github.com/wecoded-dev/Aquascript)
+
+Aquascript is a powerful platform providing **free, blazing fast JSON APIs** for developers.  
+Check out our website 👉 [aquascript.xyz](https://aquascript.xyz)  
+_The fastest way for developers to access public data and build cool things!_
+
+---
+
+<div align="center">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="340" alt="API Animation" />
+</div>
+
+---
+
+## ✨ GitHub Animations & Live Stats
 
 <div align="center">
 
-[![AquaScript Repo](https://github-readme-stats.vercel.app/api/pin/?username=wecoded-dev&repo=Aquascript&theme=tokyonight)](https://github.com/wecoded-dev/Aquascript)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=36D1DC&center=true&vCenter=true&width=450&lines=Welcome+to+my+GitHub!;Front-End+Developer+Extraordinaire;API+Builder;Open+Source+Enthusiast;Drop+a+star+if+you+like+Aquascript!)
 
-<br/>
+![wecoded-dev's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=wecoded-dev&theme=react-dark)
 
-[![Explore AquaScript](https://img.shields.io/badge/Explore%20AquaScript%20APIs-00bfff?style=for-the-badge&logo=cloudflare&logoColor=white)](https://aquascript.xyz)
+<img src="https://github-readme-stats.vercel.app/api?username=wecoded-dev&show_icons=true&theme=radical" height="140"/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=wecoded-dev&theme=radical" height="140"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wecoded-dev&layout=compact&theme=radical" height="140"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=wecoded-dev&theme=onestar&no-bg=true&row=1&column=7" height="110"/>
 
 </div>
 
 ---
 
-### 📊 GitHub Stats
+## 🏆 Achievements & Highlights
+
+- 🚀 Created [Aquascript](https://github.com/wecoded-dev/Aquascript): Free, blazing fast JSON APIs for developers
+- 🎨 Crafted beautiful UIs and interactive animations
+- 🌐 Built projects with modern web technologies
+- 💡 Always learning, sharing, and collaborating!
+
+---
+
+<div align="center">
+  <img src="https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif" width="350" alt="Celebration Animation" />
+</div>
+
+---
+
+## 😂 Developer Jokes
+
+<div align="center">
+  <img src="https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif" width="220" alt="Laugh Animation" />
+</div>
+
+> **Why do programmers love nature?**  
+> _Because it has the best trees (data structures)!_
+
+> **Why do developers always mix up Christmas and Halloween?**  
+> _Because Oct 31 == Dec 25!_
+
+> **How do you comfort a JavaScript bug?**  
+> _You console it._
+
+---
+
+## 💬 Contact Me
+
+- **Email:** [hanzlabaig917@gmail.com](mailto:hanzlabaig917@gmail.com)
+- **GitHub:** [wecoded-dev](https://github.com/wecoded-dev)
+- **Website:** [aquascript.xyz](https://aquascript.xyz)
+
+---
+
+## 📚 Quick Facts
+
+| Fact Type        | Value                |
+|------------------|---------------------|
+| Name             | Hanzla Baig         |
+| GitHub Username  | wecoded-dev         |
+| Featured Project | Aquascript          |
+| Skills           | HTML, CSS, JS, Java, Bootstrap, jQuery |
+| Email            | hanzlabaig917@gmail.com |
+| Website          | aquascript.xyz      |
+
+---
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=wecoded-dev&show_icons=true&theme=react&hide_border=true&border_radius=10" height="160"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=36D1DC&width=435&lines=Thank+You+for+Visiting!;Drop+a+Star+on+Aquascript!" alt="Thank You Typing SVG" />
+<br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wecoded-dev&layout=compact&theme=react&hide_border=true&border_radius=10" height="160"/>
-
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=wecoded-dev&theme=tokyonight&hide_border=true" />
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wecoded-dev&theme=tokyonight" />
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=wecoded-dev&theme=algolia&margin-w=10" />
 
 </div>
 
 ---
 
-### 📬 Contact
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/📩%20support@aquascript.xyz-00bfff?style=for-the-badge&logo=gmail&logoColor=white)](mailto:support@aquascript.xyz)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=wave&color=00bfff&height=100&section=footer&text=Thanks%20for%20visiting!%20💜&fontSize=25&fontColor=ffffff" />
-
-</div>
+<!--
+Made with ❤️ by Hanzla Baig | wecoded-dev
+-->
