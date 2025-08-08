@@ -151,6 +151,16 @@ _The fastest way for developers to access public data and build cool things!_
 
 ---
 
+## 👾 Pacman Maze
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wecoded-dev/wecoded-dev/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wecoded-dev/wecoded-dev/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/wecoded-dev/wecoded-dev/output/pacman-contribution-graph.svg">
+</picture>
+
+---
+
 <div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=1000&color=36D1DC&width=435&lines=Thank+You+for+Visiting!;Drop+a+Star+on+Aquascript!" alt="Thank You Typing SVG" />
