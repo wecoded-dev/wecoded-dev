@@ -86,6 +86,22 @@ _The fastest way for developers to access public data and build cool things!_
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=36D1DC&center=true&vCenter=true&width=450&lines=Welcome+to+my+GitHub!;Front-End+Developer+Extraordinaire;API+Builder;Open+Source+Enthusiast;Drop+a+star+if+you+like+Aquascript!)
 
+
+
+
+
+
+
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=wecoded-dev&theme=vue" height="180"/>
+</p>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=wecoded-dev&theme=vue" height="180"/>
+
+
+
+
+
 ![wecoded-dev's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=wecoded-dev&theme=react-dark)
 
 <img src="https://github-readme-stats.vercel.app/api?username=wecoded-dev&show_icons=true&theme=radical" height="140"/>
