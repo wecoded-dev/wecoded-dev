@@ -39,6 +39,13 @@ I am **Hanzla Baig** (aka _wecoded-dev_), a passionate front-end developer who l
 
 My mission: _Make the web more awesome, one pixel at a time!_
 
+
+
+<p align="center">
+  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="300" />
+</p>
+
+
 ---
 
 ## ✨ My Philosophy
