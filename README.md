@@ -96,7 +96,10 @@ _The fastest way for developers to access public data and build cool things!_
 
 
 
-
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=wecoded-dev&theme=vue" height="180"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=wecoded-dev&theme=vue&utcOffset=8" height="180"/>
+</p>
 
 
 
