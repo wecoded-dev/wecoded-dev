@@ -6,7 +6,7 @@
 
 
 # 👋 Hi, I'm <span style="color:#36D1DC;">Hanzla Baig</span>!
-## 🦄 Front-End Developer • UI Artist • API Builder
+## 🦄 Front-End Developer • UI Artist 
 
 <br>
 
