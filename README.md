@@ -184,6 +184,10 @@ _The fastest way for developers to access public data and build cool things!_
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wecoded-dev/wecoded-dev/output/pacman-contribution-graph.svg">
   <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/wecoded-dev/wecoded-dev/output/pacman-contribution-graph.svg">
 </picture>
+
+![Uploading 1758448558169372734394939879736.png…]()
+
+
 ---
 
 <div align="center">
