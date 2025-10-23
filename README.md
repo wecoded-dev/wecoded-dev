@@ -1,3 +1,5 @@
+![Visitors](https://komarev.com/ghpvc/?username=wecoded-dev&label=Visitors&color=ff69b4&style=for-the-badge)
+
 <!--
 🌈✨ Ultra-Beautiful Animated Profile of Hanzla Baig (wecoded-dev) ✨🌈
 -->
