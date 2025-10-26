@@ -16,7 +16,7 @@
 </div>
 
 
-🚀 About Me 
+## 🚀 About Me 
 
 
 <div align="center"> 
@@ -34,7 +34,7 @@ I thrive on building immersive, performance-optimized interfaces and intuitive d
 
 
 
-🧠 The Tech Universe I Command
+## 🧠 The Tech Universe I Command
 
 > A dynamic arsenal of technologies that bridge creativity and logic.
 
@@ -44,7 +44,7 @@ I thrive on building immersive, performance-optimized interfaces and intuitive d
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap,tailwind,react,next,vue,nuxt,angular,svelte,astro,redux,nodejs,express,graphql,python,django,flask,mongodb,mysql,firebase,git,github,linux,vscode,figma,ps,ai,postman,docker,kubernetes,aws,vercel,netlify,threejs,webpack,babel,npm,yarn,deno,emotion,sass,styledcomponents,androidstudio,java,cpp,cs,php,laravel,solidity,flutter,swift,go,rust,c,unity,prisma,blender,ai,opencv,pytorch,tensorflow" />
 </p>  
 
-<img src="3dicons-travel-dynamic-color.png" style="height: 40px; width: 40px; down: 10px;"> Core Expertise
+## <img src="3dicons-travel-dynamic-color.png" style="height: 40px; width: 40px; down: 10px;"> Core Expertise
 
 Frontend Engineering (React, Next.js, Vue, Angular, Svelte)
 
@@ -66,7 +66,7 @@ Performance Optimization & SEO Engineering
 
 
 
-🏗️ Signature Projects
+## 🏗️ Signature Projects
 
 <div align="center"><img src="3dicons-file-fav-dynamic-premium.png" style="height: 100px; width: 100px;"></div>
 
@@ -118,7 +118,7 @@ Performance Optimization & SEO Engineering
 
 
 
-✉️ Connect With Me
+## ✉️ Connect With Me
 
 <div align="center"><img src="3dicons-chat-bubble-dynamic-premium.png" style="height: 100px; width: 100px;"> </div>
 
@@ -131,7 +131,7 @@ Performance Optimization & SEO Engineering
 </p>
 
 
-🌠 Philosophy
+## 🌠 Philosophy
 
 > The future belongs to those who code it beautifully.
 
