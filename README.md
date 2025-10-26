@@ -68,6 +68,8 @@ Performance Optimization & SEO Engineering
 
 🏗️ Signature Projects
 
+<div align="center"><img src="3dicons-file-fav-dynamic-premium.png" style="height: 100px; width: 100px;"></div>
+
 <table align="center">
 <tr>
 <td width="50%" align="center">🚀 Aquascript
