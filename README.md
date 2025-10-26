@@ -1,3 +1,6 @@
+<center> <div align="center"> &nbsp;  <img src="3dicons-umbrella-dynamic-premium.png" height="200" width="150" align="center"> </div></center>
+
+
 <div align="center">✨ Hanzla Baig
 
 💎 Frontend Developer | Founder of AquaScript
