@@ -118,7 +118,9 @@ Performance Optimization & SEO Engineering
 
 
 
-💬 Connect With Me
+✉️ Connect With Me
+
+<div align="center"><img src="3dicons-chat-bubble-dynamic-premium.png" style="height: 100px; width: 100px;"> </div>
 
 <p align="center">
 <a href="mailto:hanzlabaig917@gmail.com"><img src="https://img.shields.io/badge/Email-hanzlabaig917@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
