@@ -42,7 +42,9 @@ I thrive on building immersive, performance-optimized interfaces and intuitive d
 
 <p align="center">
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap,tailwind,react,next,vue,nuxt,angular,svelte,astro,redux,nodejs,express,graphql,python,django,flask,mongodb,mysql,firebase,git,github,linux,vscode,figma,ps,ai,postman,docker,kubernetes,aws,vercel,netlify,threejs,webpack,babel,npm,yarn,deno,emotion,sass,styledcomponents,androidstudio,java,cpp,cs,php,laravel,solidity,flutter,swift,go,rust,c,unity,prisma,blender,ai,opencv,pytorch,tensorflow" />
-</p>💼 Core Expertise
+</p>  
+
+<img src="3dicons-travel-dynamic-color.png" style="height: 40px; width: 40px; down: 10px;"> Core Expertise
 
 Frontend Engineering (React, Next.js, Vue, Angular, Svelte)
 
