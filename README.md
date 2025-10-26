@@ -21,11 +21,7 @@
 Hi there 👋, I’m Hanzla Baig — a Frontend Developer, UI Engineer, and Product Creator who believes in merging artistic vision with engineering excellence.
 I thrive on building immersive, performance-optimized interfaces and intuitive digital systems that elevate user experience.
 
-<div align="center">
-<img src="3dicons-coffee-dynamic-premium.png" height="200" width="150"></div>
-
-💭 Vision: Create open ecosystems that help developers build faster, smarter, and more beautifully.
-🔥 Focus: Building frameworks, micro-libraries, and animated UI systems that spark creativity.
+💭 Vision: Create open ecosystems that help developers build faster, smarter, and more beautifully. <img src="3dicons-chess-dynamic-premium.png" style="height: 50px; width: 50px;">  🔥 Focus: Building frameworks, micro-libraries, and animated UI systems that spark creativity.
 
 
 
