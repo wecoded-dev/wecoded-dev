@@ -144,4 +144,7 @@ Performance Optimization & SEO Engineering
 
 <div align="center">✨ “Code isn’t just syntax — it’s sculpture in motion.”
 
+<div align="center">
+<img src="3dicons-thumb-up-dynamic-premium.png" style="height: 150px; width: 150px;"></div>
+
 </div>
