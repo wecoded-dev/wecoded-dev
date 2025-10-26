@@ -18,9 +18,11 @@
 
 🚀 About Me 
 
+
 <div align="center"> 
-<img src="3dicons-witch-hat-dynamic-color.png" height="150" width="150">
+<img src="3dicons-vamp-dynamic-color.png" height="150" width="150">
 </div>
+
 
 Hi there 👋, I’m Hanzla Baig — a Frontend Developer, UI Engineer, and Product Creator who believes in merging artistic vision with engineering excellence.
 I thrive on building immersive, performance-optimized interfaces and intuitive digital systems that elevate user experience.
