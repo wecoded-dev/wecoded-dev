@@ -20,7 +20,7 @@
 
 
 <div align="center"> 
-<img src="3dicons-vamp-dynamic-color.png" height="150" width="150">
+<img src="3dicons-vamp-dynamic-color.png" height="100" width="100">
 </div>
 
 
