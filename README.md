@@ -19,7 +19,7 @@
 🚀 About Me 
 
 <div align="center"> 
-<img src="https://github.com/wecoded-dev/wecoded-dev/blob/main/3dicons-3d-dynamic-premium.png" height="150" width="150">
+<img src="3dicons-witch-hat-dynamic-color.png" height="150" width="150">
 </div>
 
 Hi there 👋, I’m Hanzla Baig — a Frontend Developer, UI Engineer, and Product Creator who believes in merging artistic vision with engineering excellence.
