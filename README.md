@@ -160,9 +160,9 @@ Crafting Digital Experiences That Redefine Innovation ⚙️
 
 
 
-
-
-  
+<div align="center">
+<img src="3dicons-megaphone-dynamic-premium.png" style="height: 100px; width: 100px;">
+</div>
 
 </div>
 
