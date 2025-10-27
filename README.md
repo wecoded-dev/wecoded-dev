@@ -200,7 +200,11 @@ Service	Description
 🔍 SEO & Analytics	Enhancing brand visibility through smart optimization and strategic performance tracking.
 
 
+<div align="center">
+<img src="3dicons-rocket-dynamic-premium.png" style="height: 100px; width: 100px;">
+</div>
 
+</div>
 
 
 ## 🧰 Tech Stack & Tools
