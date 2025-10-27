@@ -167,7 +167,7 @@ Crafting Digital Experiences That Redefine Innovation ⚙️
 </div>
 
 
-🚀 Who We Are
+##🚀 Who We Are
 
 TheBitForge is a multidisciplinary digital agency built on innovation, precision, and creativity.
 We help brands, startups, and enterprises transform their digital presence through design-driven engineering, cutting-edge AI, and strategic marketing.
@@ -182,22 +182,28 @@ We help brands, startups, and enterprises transform their digital presence throu
 </div>
 
 
-💼 Our Core Services
+## 💼 Our Core Services
 
 Service	Description
 
+
 🌐 Website Development	Building fast, scalable, and elegant websites using modern frameworks and clean UI/UX principles.
+
 🧠 AI / Machine Learning	Automating insights, workflows, and intelligent systems with advanced AI models and ML pipelines.
+
 📈 Google & Meta Ads	Driving ROI-focused ad campaigns with deep analytics, creative copy, and precise targeting.
+
 🎨 Graphic Design	Designing brand visuals, product mockups, and digital assets that communicate identity with impact.
+
 ⚙️ Custom Tools & Automation	Building tailored systems to optimize operations, integrate APIs, and accelerate growth.
+
 🔍 SEO & Analytics	Enhancing brand visibility through smart optimization and strategic performance tracking.
 
 
 
 
 
-🧰 Tech Stack & Tools
+## 🧰 Tech Stack & Tools
 
 > We forge with the strongest tools of the trade.
 
@@ -208,7 +214,7 @@ Service	Description
 </p>
 
 
-🌐 Project Highlights
+## 🌐 Project Highlights
 
 Project	Type	Description
 
@@ -221,7 +227,7 @@ TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performanc
 
 
 
-🤝 Connect With Us
+## 🤝 Connect With Us
 
 <p align="center">
 <a href="mailto:thebitforge.dev@gmail.com"><img src="https://img.shields.io/badge/Email-thebitforge.dev@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
