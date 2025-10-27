@@ -148,3 +148,86 @@ Performance Optimization & SEO Engineering
 <img src="3dicons-thumb-up-dynamic-premium.png" style="height: 150px; width: 150px;"></div>
 
 </div>
+
+
+
+
+<div align="center">⚡ TheBitForge
+
+Crafting Digital Experiences That Redefine Innovation ⚙️
+
+> "Forging creativity with technology — building the future, one pixel and algorithm at a time."
+
+
+
+
+
+  
+
+</div>
+
+
+🚀 Who We Are
+
+TheBitForge is a multidisciplinary digital agency built on innovation, precision, and creativity.
+We help brands, startups, and enterprises transform their digital presence through design-driven engineering, cutting-edge AI, and strategic marketing.
+
+> From web development to AI-driven campaigns — we build the future you imagine.
+
+
+
+
+
+💼 Our Core Services
+
+Service	Description
+
+🌐 Website Development	Building fast, scalable, and elegant websites using modern frameworks and clean UI/UX principles.
+🧠 AI / Machine Learning	Automating insights, workflows, and intelligent systems with advanced AI models and ML pipelines.
+📈 Google & Meta Ads	Driving ROI-focused ad campaigns with deep analytics, creative copy, and precise targeting.
+🎨 Graphic Design	Designing brand visuals, product mockups, and digital assets that communicate identity with impact.
+⚙️ Custom Tools & Automation	Building tailored systems to optimize operations, integrate APIs, and accelerate growth.
+🔍 SEO & Analytics	Enhancing brand visibility through smart optimization and strategic performance tracking.
+
+
+
+
+
+🧰 Tech Stack & Tools
+
+> We forge with the strongest tools of the trade.
+
+
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,next,vue,tailwind,nodejs,express,python,django,mongodb,firebase,aws,vercel,netlify,figma,ps,ai,illustrator,xd,tensorflow,pytorch,opencv,postman,git,github" />
+</p>
+
+
+🌐 Project Highlights
+
+Project	Type	Description
+
+AquaScript	Developer Tools	Modern developer utilities & productivity tools.
+NeuraAI ChatBots	AI/ML	Smart conversational agents powered by deep learning.
+Classic-CSS	Frontend Framework	A lightweight, modern CSS toolkit.
+TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performance.
+
+
+
+
+
+🤝 Connect With Us
+
+<p align="center">
+<a href="mailto:thebitforge.dev@gmail.com"><img src="https://img.shields.io/badge/Email-thebitforge.dev@gmail.com-red?style=for-the-badge&logo=gmail" /></a>
+<a href="https://wa.me/923168021109"><img src="https://img.shields.io/badge/WhatsApp-Chat%20Now-brightgreen?style=for-the-badge&logo=whatsapp" /></a>
+<a href="https://github.com/wecoded-dev/TheBitForge"><img src="https://img.shields.io/badge/GitHub-TheBitForge-black?style=for-the-badge&logo=github" /></a>
+</p>
+
+
+<div align="center">
+
+"The Future Isn’t Found — It’s Forged."
+
+</div>
