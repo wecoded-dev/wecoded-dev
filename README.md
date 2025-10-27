@@ -175,7 +175,11 @@ We help brands, startups, and enterprises transform their digital presence throu
 > From web development to AI-driven campaigns — we build the future you imagine.
 
 
+<div align="center">
+<img src="3dicons-target-dynamic-premium.png" style="height: 100px; width: 100px;">
+</div>
 
+</div>
 
 
 💼 Our Core Services
