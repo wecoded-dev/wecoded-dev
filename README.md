@@ -245,3 +245,5 @@ TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performanc
 "The Future Isn’t Found — It’s Forged."
 
 </div>
+
+[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png) Join the CoderLegion Community](https://coderlegion.com/user/Hanzla+Baig+Dev)
