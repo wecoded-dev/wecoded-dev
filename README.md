@@ -247,3 +247,9 @@ TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performanc
 </div>
 
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png) Join the CoderLegion Community](https://coderlegion.com/user/Hanzla+Baig+Dev)
+
+
+## Latest Blog Posts and Talks
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
