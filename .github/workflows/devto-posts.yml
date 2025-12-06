@@ -1,0 +1,40 @@
+name: Update DEV.to Blog Posts
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # Runs every hour
+  workflow_dispatch:      # Manual run
+
+jobs:
+  update-devto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Fetch Latest DEV.to Posts
+        id: devto
+        run: |
+          curl -s "https://dev.to/api/articles?username=thebitforge&per_page=5" > devto.json
+          echo "POSTS=$(cat devto.json)" >> $GITHUB_OUTPUT
+
+      - name: Build Markdown List
+        id: build
+        run: |
+          posts=$(echo '${{ steps.devto.outputs.POSTS }}' | jq -r '.[] | "- [" + .title + "](" + .url + ")"')
+          echo "MARKDOWN=$posts" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          sed -i '/<!-- DEVTO:START -->/,/<!-- DEVTO:END -->/c\<!-- DEVTO:START -->\n${{ steps.build.outputs.MARKDOWN }}\n<!-- DEVTO:END -->' README.md
+
+      - name: Commit & Push
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "actions@github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update latest DEV.to posts"
+            git push
+          fi
