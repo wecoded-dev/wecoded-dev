@@ -3,38 +3,46 @@ name: Update DEV.to Blog Posts
 on:
   schedule:
     - cron: "0 * * * *"   # Runs every hour
-  workflow_dispatch:      # Manual run
+  workflow_dispatch:
 
 jobs:
   update-devto:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Fetch Latest DEV.to Posts
-        id: devto
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Fetch latest posts from DEV.to
         run: |
           curl -s "https://dev.to/api/articles?username=thebitforge&per_page=5" > devto.json
-          echo "POSTS=$(cat devto.json)" >> $GITHUB_OUTPUT
-
-      - name: Build Markdown List
-        id: build
-        run: |
-          posts=$(echo '${{ steps.devto.outputs.POSTS }}' | jq -r '.[] | "- [" + .title + "](" + .url + ")"')
-          echo "MARKDOWN=$posts" >> $GITHUB_OUTPUT
+          
+          # Build markdown list
+          echo "" > posts.md
+          for row in $(jq -c '.[]' devto.json); do
+            title=$(echo $row | jq -r '.title')
+            url=$(echo $row | jq -r '.url')
+            echo "- [$title]($url)" >> posts.md
+          done
 
       - name: Update README
         run: |
-          sed -i '/<!-- DEVTO:START -->/,/<!-- DEVTO:END -->/c\<!-- DEVTO:START -->\n${{ steps.build.outputs.MARKDOWN }}\n<!-- DEVTO:END -->' README.md
+          awk 'BEGIN {start=0}
+            /<!-- DEVTO:START -->/ {print; system("cat posts.md"); start=1; next}
+            /<!-- DEVTO:END -->/ {start=0}
+            !start {print}
+          ' README.md > README.tmp
+          mv README.tmp README.md
 
-      - name: Commit & Push
+      - name: Commit & push changes
         run: |
           git config user.name "GitHub Action"
           git config user.email "actions@github.com"
           git add README.md
           if ! git diff --cached --quiet; then
-            git commit -m "Update latest DEV.to posts"
+            git commit -m "Update DEV.to blog posts"
             git push
           fi
