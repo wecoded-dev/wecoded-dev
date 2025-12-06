@@ -1,0 +1,120 @@
+name: Update DEV.to posts from RSS
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # hourly
+  workflow_dispatch:      # manual trigger
+
+jobs:
+  update-from-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch DEV.to feed and build posts.md
+        run: |
+          set -e
+          FEED_URL="https://dev.to/feed/thebitforge"
+          echo "Fetching $FEED_URL"
+          python3 - <<'PY'
+import urllib.request, xml.etree.ElementTree as ET, sys, html
+
+url = "https://dev.to/feed/thebitforge"
+try:
+    raw = urllib.request.urlopen(url, timeout=20).read()
+except Exception as e:
+    print("ERROR_FETCHING_FEED:", e)
+    sys.exit(2)
+
+# Parse XML
+try:
+    root = ET.fromstring(raw)
+except Exception as e:
+    print("ERROR_PARSING_FEED:", e)
+    sys.exit(3)
+
+# Helper: try multiple xpaths for title/link
+def get_text(node, names):
+    for n in names:
+        el = node.find(n)
+        if el is not None and (el.text and el.text.strip()):
+            return el.text.strip()
+    return None
+
+items = root.findall('.//item')  # RSS
+if not items:
+    # try Atom entry (with namespace)
+    ns = {'a':'http://www.w3.org/2005/Atom'}
+    items = root.findall('.//{http://www.w3.org/2005/Atom}entry')
+
+out_lines = []
+count = 0
+MAX = 5
+for it in items:
+    if count >= MAX:
+        break
+    # title
+    title = get_text(it, ['title', '{http://www.w3.org/2005/Atom}title']) or "Untitled"
+    # link: RSS has <link> with text; Atom often uses <link href="..."/>
+    link = get_text(it, ['link', '{http://www.w3.org/2005/Atom}link'])
+    if (not link) or (link.strip() == ""):
+        # check for Atom link with href
+        for l in it.findall('.//{http://www.w3.org/2005/Atom}link'):
+            href = l.attrib.get('href')
+            rel = l.attrib.get('rel','')
+            if href and (rel=='' or rel=='alternate'):
+                link = href
+                break
+    # For RSS sometimes <link> contains whitespace/newlines, strip
+    if link:
+        link = link.strip()
+    else:
+        link = "#"
+    # Escape brackets in title
+    title = title.replace('[','\\[').replace(']','\\]')
+    out_lines.append(f"- [{html.unescape(title)}]({link})")
+    count += 1
+
+if not out_lines:
+    print("No posts found in feed.")
+    sys.exit(4)
+
+with open('posts.md','w',encoding='utf-8') as f:
+    f.write("\\n".join(out_lines) + "\\n")
+print("WROTE posts.md with", len(out_lines), "entries")
+PY
+
+      - name: Inject posts.md into README
+        run: |
+          # README markers (must exist)
+          START="<!-- DEVTO:START -->"
+          END="<!-- DEVTO:END -->"
+          if ! grep -q "$START" README.md || ! grep -q "$END" README.md; then
+            echo "ERROR: README.md must contain markers:"
+            echo "$START"
+            echo "$END"
+            exit 1
+          fi
+
+          # Generate new README with posts inserted between markers
+          awk -v start="$START" -v end="$END" '
+            BEGIN {in=0}
+            $0 ~ start { print; system("cat posts.md"); in=1; next }
+            $0 ~ end { in=0; print; next }
+            !in { print }
+          ' README.md > README.new
+          mv README.new README.md
+          echo "README updated."
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update DEV.to posts from feed"
+            git push
+          else
+            echo "No changes to commit."
+          fi
