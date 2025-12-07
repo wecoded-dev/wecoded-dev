@@ -249,7 +249,46 @@ TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performanc
 [![CoderLegion](https://coderlegion.com/cl_badge_logo1.png) Join the CoderLegion Community](https://coderlegion.com/user/Hanzla+Baig+Dev)
 
 
-### ✍️ Latest Blog Posts
 
-<!-- DEVTO:START -->
-<!-- DEVTO:END -->
+# TheBitForge – Blog Showcase
+
+A curated collection of my top technical articles published on DEV Community. These posts cover web development, JavaScript, Git mastery, debugging techniques, and the habits that elevate a developer from good to exceptional.
+
+---
+
+## 📚 Featured Blog Posts
+
+### 🔧 Debugging & Problem Solving
+
+* **[Debugging JavaScript Like a Pro – Essential Techniques and Tools](https://dev.to/thebitforge/debugging-javascript-like-a-pro-essential-techniques-and-tools-cfl)**
+* **[10 JavaScript Console Methods You Didn’t Know Existed (And How They’ll Save You Hours of Debugging)](https://dev.to/thebitforge/10-javascript-console-methods-you-didnt-know-existed-and-how-theyll-save-you-hours-of-debugging-4a7c)**
+
+### 🧠 Developer Mindset & Best Practices
+
+* **[Common Coding Mistakes at Every Level (and How to Fix Them)](https://dev.to/thebitforge/common-coding-mistakes-at-every-level-and-how-to-fix-them-4cgb)**
+* **[The Art of Reading Code – A Skill for Every Developer](https://dev.to/thebitforge/the-art-of-reading-code-a-skill-for-every-developer-3b8g)**
+* **[10 Developer Habits That Separate Good Programmers from Great Ones](https://dev.to/thebitforge/10-developer-habits-that-separate-good-programmers-from-great-ones-293n)**
+
+### 🏗️ Architecture & Systems Design
+
+* **[The Architecture Nobody Talks About – How I Built Systems That Actually Scale (and Why Most Don’t)](https://dev.to/thebitforge/the-architecture-nobody-talks-about-how-i-built-systems-that-actually-scale-and-why-most-dont-3fk5)**
+
+### 🛠️ Git & Workflow Mastery
+
+* **[The Complete Git Command Reference – Mastering Version Control from Basics to Advanced](https://dev.to/thebitforge/the-complete-git-command-reference-mastering-version-control-from-basics-to-advanced-1n21)**
+
+### 🚀 Technology & Future Insights
+
+* **[The Year We Crossed the Threshold – A Journey Through 2025’s Most Transformative Technology](https://dev.to/thebitforge/the-year-we-crossed-the-threshold-a-journey-through-2025s-most-transformative-technology-3aa5)**
+
+### 🏢 About TheBitForge
+
+* **[TheBitForge – Digital Solutions for Modern Businesses](https://dev.to/thebitforge/thebitforge-digital-solutions-for-modern-businesses-1845)**
+
+---
+
+## 🌐 Stay Connected
+
+Feel free to explore more of my work on DEV or reach out for collaborations, open-source work, or project discussions.
+
+✨ *More blogs coming soon!*
