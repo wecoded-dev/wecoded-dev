@@ -1,3 +1,9 @@
+<a href="https://hanzla-beig.netlify.app" title="Visit Hanzla Beig Portfolio">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Explore%20Hanzla%20Beig%27s%20Portfolio-blueviolet?logo=netlify&style=for-the-badge&logoColor=white" alt="Visit My Portfolio" />
+  </a>
+
+
+
 <center> <div align="center"> &nbsp;  <img src="3dicons-umbrella-dynamic-premium.png" height="200" width="150" align="center"> </div></center>
 
 
@@ -24,6 +30,11 @@
 </div>
 
 
+<a href="https://hanzla-beig.netlify.app" title="Visit Hanzla Beig Portfolio">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Explore%20Hanzla%20Beig%27s%20Portfolio-blueviolet?logo=netlify&style=for-the-badge&logoColor=white" alt="Visit My Portfolio" />
+  </a>
+
+
 Hi there 👋, I’m Hanzla Baig — a Frontend Developer, UI Engineer, and Product Creator who believes in merging artistic vision with engineering excellence.
 I thrive on building immersive, performance-optimized interfaces and intuitive digital systems that elevate user experience.
 
@@ -32,7 +43,9 @@ I thrive on building immersive, performance-optimized interfaces and intuitive d
 <img src="3dicons-chess-dynamic-premium.png" style="height: 50px; width: 50px;">  🔥 Focus: Building frameworks, micro-libraries, and animated UI systems that spark creativity.
 
 
-
+<a href="https://hanzla-beig.netlify.app" title="Visit Hanzla Beig Portfolio">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Explore%20Hanzla%20Beig%27s%20Portfolio-blueviolet?logo=netlify&style=for-the-badge&logoColor=white" alt="Visit My Portfolio" />
+  </a>
 
 ## 🧠 The Tech Universe I Command
 
@@ -63,7 +76,9 @@ Open Source Frameworks & Developer Ecosystems
 Performance Optimization & SEO Engineering
 
 
-
+<a href="https://hanzla-beig.netlify.app" title="Visit Hanzla Beig Portfolio">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-Explore%20Hanzla%20Beig%27s%20Portfolio-blueviolet?logo=netlify&style=for-the-badge&logoColor=white" alt="Visit My Portfolio" />
+  </a>
 
 
 ## 🏗️ Signature Projects
