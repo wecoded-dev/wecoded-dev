@@ -9,7 +9,7 @@
 
 <div align="center">✨ Hanzla Baig
 
-💎 Frontend Developer
+💎 Frontend Developer 💎 
 
 > Crafting the architecture of imagination — transforming pixels into stories and code into rhythm.
 
