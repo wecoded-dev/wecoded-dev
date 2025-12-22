@@ -261,7 +261,43 @@ TheBitForge Portfolio	Agency Site	Dynamic digital portfolio built for performanc
 
 </div>
 
-[![CoderLegion](https://coderlegion.com/cl_badge_logo1.png) Join the CoderLegion Community](https://coderlegion.com/user/Hanzla+Baig+Dev)
+
+
+
+<div align="center">
+
+<!-- Pakistan Top Committer Badge -->
+<a href="https://user-badge.committers.top/pakistan/wecoded-dev">
+  <img 
+    src="https://user-badge.committers.top/pakistan/wecoded-dev.svg" 
+    alt="Top Committer in Pakistan"
+  />
+</a>
+
+<br/><br/>
+
+<!-- GitHub Stats -->
+<img 
+  src="https://github-readme-stats.vercel.app/api?username=wecoded-dev&show_icons=true&hide_title=true&hide_border=true&bg_color=ffffff&icon_color=8b5a2b&text_color=4e342e&title_color=6d4c41" 
+  height="160"
+/>
+
+<img 
+  src="https://github-readme-streak-stats.herokuapp.com/?user=wecoded-dev&hide_border=true&background=FFFFFF&ring=8B5A2B&fire=6D4C41&currStreakLabel=4E342E&sideLabels=4E342E&currStreakNum=6D4C41&sideNums=8B5A2B" 
+  height="160"
+/>
+
+<br/><br/>
+
+<!-- Extra Credibility Badges -->
+<img src="https://img.shields.io/github/followers/wecoded-dev?label=Followers&style=for-the-badge&color=8b5a2b&labelColor=ffffff" />
+<img src="https://img.shields.io/github/stars/wecoded-dev?label=Stars&style=for-the-badge&color=6d4c41&labelColor=ffffff" />
+<img src="https://img.shields.io/badge/Open%20Source-Contributor-4e342e?style=for-the-badge" />
+
+</div>
+
+
+
 
 
 
